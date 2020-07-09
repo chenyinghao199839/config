@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+
+<style>
+    * {
+        margin: 0;
+    }
+
+    html,
+    body,
+    #app {
+        height: 100%;
+    }
+
+    .el-container,.el-main {
+        height: 100%;
+    }
+    .el-header{
+        background-color: #545c64;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .el-aside{
+        background-color: #545c64;
+    }
+    .el-menu{
+        border: 0;
+    }
+    .content{
+        width: 100%;
+        height: 100%;
+    }
+    el-menu-item a{
+        color: white;
+        text-decoration: none;
+    }
+</style>
+
+
+
+<body>
+<div id="app">
+    <el-container>
+        <el-header>云迪在线学习平台</el-header>
+        <el-container>
+            <el-aside width="300px">
+                <el-menu default-active="1" class="el-menu-vertical-demo"
+                         background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
+                    <el-submenu index="1">
+                        <template slot="title">
+                            <i class="el-icon-location"></i>
+                            <span>基础数据管理</span>
+                        </template>
+                        <el-menu-item-group>
+                            <el-menu-item>
+                                <el-link type="primary" target="content" href="planType.html">计划分类</el-link>
+                            </el-menu-item>
+                            <el-menu-item>
+                                <el-link type="primary" target="content" href="courseType.html">课程分类</el-link>
+                            </el-menu-item>
+                            <el-menu-item>
+                                <el-link type="primary" target="content" href="questionType.html">知识及问题分类</el-link>
+                            </el-menu-item>
+                            <el-menu-item>
+                                <el-link type="primary" target="content" href="teachDirection.html">教学方向</el-link>
+                            </el-menu-item>
+                            <el-menu-item>
+                                <el-link type="primary" target="content" href="dictionary.html">字典表</el-link>
+                            </el-menu-item>
+                            <el-menu-item>
+                                <el-link type="primary" target="content" href="courseTime.html">课表时间</el-link>
+                            </el-menu-item>
+                        </el-menu-item-group>
+                    </el-submenu>
+                    <el-menu-item index="2">
+                        <i class="el-icon-menu"></i>
+                        <span slot="title">知识管理</span>
+                    </el-menu-item>
+                    <el-menu-item index="3">
+                        <i class="el-icon-menu"></i>
+                        <span slot="title">内容管理</span>
+                    </el-menu-item>
+                    <el-menu-item index="4">
+                        <i class="el-icon-menu"></i>
+                        <span slot="title">资源管理</span>
+                    </el-menu-item>
+                </el-menu>
+            </el-aside>
+            <el-main>
+                <iframe  class="content" name="content"
+                         frameborder="0" scrolling="no"
+                         src="courseTime.html"></iframe>
+            </el-main>
+        </el-container>
+    </el-container>
+
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function () {
+            return { visible: false }
+        }
+    })
+</script>
+
+</html>

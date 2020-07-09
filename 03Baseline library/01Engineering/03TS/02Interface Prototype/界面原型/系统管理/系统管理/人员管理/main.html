@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>人员管理</title>
+<style type="text/css">
+<!--
+.STYLE1 {
+	font-size: 18px;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body>
+<p class="STYLE1">系统管理/人员管理</p>
+<form id="form1" name="form1" method="post" action="">
+  姓名
+  <input type="text" name="textfield" />
+  登录名
+  <input type="text" name="textfield2" />
+请选择人员状态
+<select name="select">
+</select>
+ 请选择人员类型
+ <select name="select2">
+</select>
+ 组织机构
+ <select name="select3">
+</select>
+ <input name="Submit4" type="submit" value="查询" /> 
+  <a href="insert.html" target="mainFrame">新增</a>
+</form>
+<p>数据导入</p>
+<form id="form2" name="form2" enctype="multipart/form-data" method="post" action="">
+  请选择文件
+    <input type="file" name="file" />
+    <input name="Submit" type="submit" value="导入" /> 
+    <input name="Submit2" type="submit" value="导出到Excel" />
+    <input name="Submit3" type="submit" value="下载模板" />
+</form>
+<p>&nbsp; </p>
+</body>
+</html>

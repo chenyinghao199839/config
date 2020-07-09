@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="../js/JQuery3.4.1/jquery.min.js" rel="script"></script>
+<script src="../js/Bootstrap/bootstrap.js" rel="script"></script>
+
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .top_input div{
+        display: inline-block;
+    }
+</style>
+<body>
+    <h5>excel导入数据</h5>
+    <hr>
+
+    <div style="margin-bottom: 20px">
+        <input type="file">
+        <button class="btn btn-sm btn-primary">导入</button>
+    </div>
+
+    <div class="top_input" style="margin-bottom: 20px">
+        <div>
+            <div>字典中文：<input type="text"></div>
+            <div>字典标签：<input type="text"></div>
+        </div>
+    </div>
+
+    <div>
+        <div style="float: left">
+            <ul>
+                <li>文件类型</li>
+                <ul>
+                    <li>1234</li>
+                </ul>
+            </ul>
+        </div>
+        <div style="float: left;margin-left: 300px">
+            <table class="table-bordered">
+                <tr>
+                    <td>字典父项：</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>字典标志：</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>字典名称：</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>字典值：</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>是否排序：</td>
+                    <td>
+                        <input style="margin-left: 5px" type="radio">是
+                        <input style="margin-left: 5px" type="radio">否
+                    </td>
+                </tr>
+                <tr>
+                    <td>排序值：</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>备注：</td>
+                    <td><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button class="btn btn-sm btn-primary">保存</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

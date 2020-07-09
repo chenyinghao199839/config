@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基础数据管理</title>
+
+    <script src="../js/JQuery3.4.1/jquery.min.js" rel="script"></script>
+    <script src="../js/Bootstrap/bootstrap.js" rel="script"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    a,a:hover{
+        text-decoration: none;
+
+    }
+    .container{
+        background: white;
+    }
+    .container .title{
+        text-align: center;
+    }
+    .container .context{
+        width: 1000px;
+        height: 500px;
+        margin-top: 50px;
+    }
+    .container .context .list .list-group{
+        width: 150px;
+        height: 500px;
+        margin-right: 50px;
+        list-style: none;
+        float: left;
+        display: inline-block;
+    }
+    .container .context .list .list-group .list-group-item{
+        font-size: 13px;
+        height: 60px;
+        background: rgb(245,247,248);
+    }
+    .container .context .list .list-group .parent{
+        color: #0b2e13;
+        font-size: 18px;
+    }
+    .container .context .content{
+        float: left;
+        width: 800px;
+        height: 500px;
+        display: inline-block;
+    }
+</style>
+<body>
+
+<div class="container">
+    <div>
+        <h3 class="title">云迪在线网络学习平台</h3>
+    </div>
+    <div class="context">
+        <div class="list">
+            <ul class="list-group">
+                <li><a class="list-group-item parent active">基础数据管理</a></li>
+                <li><a target="content" class="list-group-item" href="planType.html">计划分类</a></li>
+                <li><a target="content" class="list-group-item" href="courseType.html">课程分类</a></li>
+                <li><a target="content" class="list-group-item" href="questionType.html">知识及问题分类</a></li>
+                <li><a target="content" class="list-group-item" href="teachDirection.html">教学方向</a></li>
+                <li><a target="content" class="list-group-item" href="dictionary.html">字典表</a></li>
+                <li><a target="content" class="list-group-item" href="courseTime.html">课表时间</a></li>
+            </ul>
+        </div>
+        <div>
+            <iframe class="content" name="content"
+                    frameborder="0" scrolling="no"
+                    src="teachDirection.html"></iframe>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script>
+    export default {
+        methods: {
+            handleOpen(key, keyPath) {
+                console.log(key, keyPath);
+            },
+            handleClose(key, keyPath) {
+                console.log(key, keyPath);
+            }
+        }
+    }
+</script>
+</html>
